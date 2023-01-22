@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- monarop google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+    <title>Tea House</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        myRed: '#FF0000',
+                        myOrange: '#FF8938',
+                        title_color: '#1C1C1C'
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-manrope">
+    <header class="h-screen">
+        <div class="max-w-7xl mx-auto pt-16 px-5">
+            <div class="md:flex justify-between ">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-7xl font-bold text-title_color leading-tight">It's good <br>
+                        tea tim eat
+                        The
+                        <br>Tea
+                        House
+                    </h1>
+                    <p class="my-7 leading-8 md:w-3/4 ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                        To
+                        Your
+                        Taste
+                        Buds.
+                    </p>
+                    <button
+                        class="text-lg text-white bg-gradient-to-r from-myOrange to-myRed rounded-lg p-5 flex items-center hover:tracking-wider duration-200 group">
+                        Explore More
+                        <img class="h-5 ml-2 group-hover:rotate-45" src="images/arrow.png" alt="">
+
+                    </button>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img class=" " src="images/banner.png" alt="">
+                    <div
+                        class="flex items-center py-3 px-10 bg-white shadow-lg border w-fit absolute bottom-4 left-10 md:left-20">
+                        <img class="w-10 mr-2" src="images/star.svg" alt="">
+                        <div>
+                            <h3 class="text-3xl font-semibold text-title_color">5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
